@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+header, footer {
+	padding: 1em;
+	color: white;
+	background-color: green;
+	clear: left;
+	text-align: center;
+}
+
+nav {
+	background: #ccc;
+	margin: 0;
+	padding: 1em;
+	overflow: hidden;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	float:left;
+}
+   
+nav ul a {
+	text-decoration: none;
+	padding: .5em;
+}
+
+article {
+	padding: 1em;
+	width: 100%;
+	float: left;
+	background-color: #f1f1f1;
+}
+aside {
+	display: none;
+	float: left;
+	padding: 1em;
+	width: 100%;
+	background-color: #2196F3;
+}
+footer {
+	clear: both;
+}
+
+/* KUNCI RESPONSIVE DESIGN ADA DI MEDIA QUERIES DIBAWAH INI */
+/* MOBILE FIRST MENGGUNAKAN min-width MEDIA QUERY SEBAGAI KEBALIKAN DARI max-width */
+
+/* Untuk ukuran screen >= 480px ( mobile device ) */
+@media screen and (min-width: 480px) {
+	aside {
+		display: block;
+	}
+}
+
+/* Untuk ukuran screen >= 769px ( tablet device ) */
+@media screen and (min-width: 769px) {
+	article {
+		width: 70%;
+	}
+	aside {
+		width: 30%;
+	}
+}

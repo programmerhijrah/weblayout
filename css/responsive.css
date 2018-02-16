@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+header, footer {
+	padding: 1em;
+	color: white;
+	background-color: green;
+	clear: left;
+	text-align: center;
+}
+
+nav {
+	background: #ccc;
+	margin: 0;
+	padding: 1em;
+	overflow: hidden;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	float:left;
+}
+   
+nav ul a {
+	text-decoration: none;
+	padding: .5em;
+}
+
+article {
+	padding: 1em;
+	width: 70%;
+	float: left;
+	background-color: #f1f1f1;
+}
+aside {
+	float: left;
+	padding: 1em;
+	width: 30%;
+	background-color: #2196F3;
+}
+footer {
+	clear: both;
+}
+
+/* KUNCI RESPONSIVE DESIGN ADA DI MEDIA QUERIES DIBAWAH INI */
+
+/* Untuk ukuran screen <= 768px ( tablet device ) */
+@media screen and (max-width: 768px) {
+	article, aside {
+		width: 100%;
+	}
+}
+
+/* Untuk ukuran screen <= 480px ( mobile device ) */
+@media screen and (max-width: 480px) {
+	aside {
+		display: none;
+	}
+}
