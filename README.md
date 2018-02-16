@@ -7,3 +7,4 @@ Source code basic web layout, responsive layout
 4. Mobile First
 5. Grid
 6. Grid Responsive
+7. Responsive Image
