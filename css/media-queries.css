@@ -1,0 +1,26 @@
+.box {
+	padding: 1em;
+	margin-bottom: .5em;
+	background: #55efc4; /* default bg color */
+}
+
+/* KUNCI RESPONSIVE DESIGN ADA DI MEDIA QUERIES DIBAWAH INI */
+/* MOBILE FIRST MENGGUNAKAN min-width MEDIA QUERY SEBAGAI KEBALIKAN DARI max-width */
+
+/* Untuk ukuran screen >= 480px ( mobile device ) */
+@media screen and (min-width: 480px) {
+	.box-desktop {
+		background: #74b9ff;
+	}
+}
+
+/* Untuk ukuran screen >= 769px ( tablet device ) */
+@media screen and (min-width: 769px) {
+	.box-desktop {
+		background: #fd79a8;
+	}
+
+	.box-tablet {
+		background: #6c5ce7;
+	}
+}
